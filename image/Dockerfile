@@ -2,7 +2,7 @@ FROM ubuntu
 
 RUN set -x && \
   apt-get update && \
-  apt-get install -y rsyslog rsyslog-gnutls
+  apt-get install -y rsyslog rsyslog-gnutls gnutls-bin
 
 RUN set -x && \
   touch /var/log/rsyslog.log && \
